@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuuva - Catálogo de Jogos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo 1" class="logo-left">
+            <img src="img/Chuuvalogo.png" alt="Chuuva Logo" class="logo-right">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jogos.html">Catálogo</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="filtros">
+            <input type="text" id="busca" placeholder="Buscar jogos...">
+            <select id="categoria-filtro">
+                <option value="todos">Todas as categorias</option>
+                <option value="acao">Ação</option>
+                <option value="aventura">Aventura</option>
+                <option value="rpg">RPG</option>
+                <option value="estrategia">Estratégia</option>
+            </select>
+        </div>
+
+        <div class="jogos-grid" id="jogos-container">
+            <!-- Jogos serão inseridos via JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chuuva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
