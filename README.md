@@ -1,71 +1,93 @@
-Catálogo de Jogos "Chuuva"
-Bem-vindo ao projeto Chuuva, um catálogo de jogos online desenvolvido com HTML, CSS e JavaScript. Este projeto apresenta uma interface simples e responsiva para explorar jogos por categorias, com uma página inicial que exibe jogos em destaque, uma página de catálogo com filtros e uma página de login com validação básica.
+# 🎮 Catálogo de Jogos "Chuuva" 
 
-Páginas
+![Banner](img/Chuuvalogo.png) <!-- Adicione um banner se tiver -->
 
-index.html: Página inicial com um carrossel exibindo um jogo de cada categoria (ação, RPG, aventura, estratégia) e um botão "Explorar o Catálogo" que leva à página jogos.html. Inclui uma seção de categorias para fins visuais (sem interatividade).
-jogos.html: Página do catálogo com uma grade de jogos, filtros por busca (nome do jogo) e categoria, e botões para adicionar jogos ao carrinho (simulação).
-login.html: Página de login com validação simples (usuário: admin, senha: 123). Após login bem-sucedido, redireciona para jogos.html.
+Bem-vindo ao projeto **Chuuva**, um catálogo de jogos online desenvolvido com HTML, CSS e JavaScript. Este projeto apresenta uma interface simples e responsiva para explorar jogos por categorias.
 
-Funcionalidades
+## 🌟 Destaques
+- Interface limpa e responsiva
+- Filtros por categoria e busca
+- Simulação de carrinho de compras
+- Design adaptável para mobile e desktop
 
-Carrossel de Destaques: Exibe quatro jogos na página inicial, um de cada categoria, sem barra de rolagem em telas de desktop.
-Filtros no Catálogo: Permite filtrar jogos por nome (busca por texto) e categoria (ação, RPG, aventura, estratégia) na página jogos.html.
-Carrinho Simulado: Botões "Adicionar ao Carrinho" adicionam jogos a um array carrinho no dados.js com um alerta de confirmação.
-Design Responsivo: O layout se adapta a diferentes tamanhos de tela, com ajustes no carrossel e navegação para dispositivos móveis.
-Logos: Duas logos (logo.png e Chuuvalogo.png) são exibidas lado a lado no cabeçalho de todas as páginas, com a Chuuvalogo.png maior horizontalmente.
+## 🖥️ Páginas
 
-Pré-requisitos
-Para executar o projeto localmente, você precisará do XAMPP instalado. O XAMPP é uma ferramenta que fornece um servidor Apache para hospedar aplicações web localmente.
+| Página | Descrição |
+|--------|-----------|
+| `index.html` | Página inicial com carrossel de destaques e categorias |
+| `jogos.html` | Catálogo completo com filtros e função de "adicionar ao carrinho" |
+| `login.html` | Área de login com validação básica (usuário: `admin`, senha: `123`) |
 
-Sistema Operacional: Windows, macOS ou Linux.
-XAMPP: Versão mais recente (disponível em https://www.apachefriends.org).
-Navegador Web: Qualquer navegador moderno (Chrome, Firefox, Edge, etc.).
-Imagens: Certifique-se de que as imagens (logo.png, Chuuvalogo.png e as imagens dos jogos na pasta img/jogos/) estejam disponíveis.
+## 🛠️ Funcionalidades
 
-Como Configurar e Executar com XAMPP
-Siga os passos abaixo para configurar e executar o projeto no XAMPP:
+### 🎡 Carrossel de Destaques
+- Exibe um jogo de cada categoria (Ação, RPG, Aventura, Estratégia)
+- Layout otimizado para desktop e mobile
 
-Instalar o XAMPP:
+### 🔍 Filtros Inteligentes
+- Busca por nome do jogo
+- Filtro por categoria
+- Atualização em tempo real
 
-Baixe o XAMPP no site oficial: https://www.apachefriends.org.
-Siga as instruções de instalação para seu sistema operacional (Windows, macOS ou Linux).
-Após a instalação, o XAMPP será configurado com uma pasta padrão para hospedar arquivos web, geralmente localizada em:
-Windows: C:\xampp\htdocs
-macOS/Linux: /opt/lampp/htdocs (pode variar dependendo da instalação).
+### 🛒 Carrinho Simulado
+- Botões interativos
+- Feedback visual ao adicionar itens
+- Armazenamento temporário em `dados.js`
 
+### 📱 Design Responsivo
+- Adaptável a diferentes tamanhos de tela
+- Navegação otimizada para mobile
+- Experiência consistente em todos os dispositivos
 
-Copiar o Projeto para a Pasta htdocs:
-
-Crie uma pasta chamada chuuva-catalogo dentro da pasta htdocs do XAMPP.
-Copie todos os arquivos e pastas do projeto (index.html, login.html, jogos.html, css/, js/, img/) para a pasta chuuva-catalogo.
-A estrutura final deve ser semelhante à descrita na seção "Estrutura do Projeto".
-
-
-Iniciar o Servidor Apache:
-
-Abra o XAMPP Control Panel.
-Clique no botão Start ao lado de Apache para iniciar o servidor web.
-Certifique-se de que a porta padrão (geralmente 80) esteja livre. Se houver conflitos, você pode alterar a porta no arquivo de configuração do Apache (httpd.conf) ou liberar a porta.
+## ⚙️ Pré-requisitos
 
 
-Acessar o Projeto no Navegador:
+- XAMPP (última versão)
+- Navegador moderno (Chrome, Firefox, Edge)
+- Arquivos de imagem na pasta correta
+🚀 Como Executar
+Instale o XAMPP
+Download oficial
 
-Abra um navegador web e digite o seguinte endereço:http://localhost/chuva/index.html
+Configure o projeto
 
+bash
+# Clone ou copie os arquivos para:
+Windows: C:\xampp\htdocs\chuva
+macOS/Linux: /opt/lampp/htdocs/chuva
+Inicie o servidor
 
-Isso abrirá a página inicial do projeto. Você pode navegar para as outras páginas (jogos.html e login.html) usando os links no menu de navegação.
+Abra o XAMPP Control Panel
 
+Inicie o módulo Apache
 
-Testar o Login:
+Acesse o projeto
 
-Na página de login (http://localhost/chuuva-catalogo/login.html), use as credenciais:
+http://localhost/chuva/index.html
+Teste o login
+
 Usuário: admin
 Senha: 123
 
 
-Um login bem-sucedido redirecionará para jogos.html. Credenciais incorretas exibirão uma mensagem de erro.
-
-
-Licença
+📂 Estrutura do Projeto
+```plaintext
+/chuva
+├── css/
+│   ├── estilo.css
+│   └── reset.css
+├── img/
+│   ├── jogos/
+│   ├── Chuuvalogo.png
+│   └── logo.png
+├── js/
+│   ├── dados.js
+│   ├── carrossel.js
+│   ├── filtros.js
+│   └── login.js
+├── index.html
+├── jogos.html
+└── login.html
+```
+📜 Licença
 © 2025 Chuuva. Todos os direitos reservados.
