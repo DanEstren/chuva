@@ -49,12 +49,13 @@ Bem-vindo ao projeto **Chuuva**, um catálogo de jogos online desenvolvido com H
 Instale o XAMPP
 Download oficial
 
-Configure o projeto
 
-bash
 # Clone ou copie os arquivos para:
+
 Windows: C:\xampp\htdocs\chuva
+
 macOS/Linux: /opt/lampp/htdocs/chuva
+
 Inicie o servidor
 
 Abra o XAMPP Control Panel
@@ -71,7 +72,7 @@ Senha: 123
 
 
 📂 Estrutura do Projeto
-```plaintext
+```bash
 /chuva
 ├── css/
 │   ├── estilo.css
