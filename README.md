@@ -17,6 +17,7 @@ Bem-vindo ao projeto **Chuuva**, um catálogo de jogos online desenvolvido com H
 | `index.html` | Página inicial com carrossel de destaques e categorias |
 | `jogos.html` | Catálogo completo com filtros e função de "adicionar ao carrinho" |
 | `login.html` | Área de login com validação básica (usuário: `admin`, senha: `123`) |
+| `register.html` | Área de Register para a criação do Usuário |
 
 ## 🛠️ Funcionalidades
 
@@ -70,6 +71,7 @@ Teste o login
 Usuário: admin
 Senha: 123
 
+Se desejar criar um novo usuário ir até Register
 
 📂 Estrutura do Projeto
 ```bash
@@ -87,8 +89,9 @@ Senha: 123
 │   ├── filtros.js
 │   └── login.js
 ├── index.html
+├── login.html
 ├── jogos.html
-└── login.html
+└── register.html
 ```
 📜 Licença
 © 2025 Chuuva. Todos os direitos reservados.
